@@ -1,0 +1,15 @@
+
+ai_model:
+  namespace: rabbit
+  image:
+    repository: basu-ai-model:v0.1.0
+    pullPolicy: Never
+
+rabbitmq:
+  namespaceOverride: rabbit
+  auth:
+    username: user
+    password: passwd
+  
+  persistence:
+    enabled: false
